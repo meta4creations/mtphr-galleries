@@ -34,8 +34,11 @@ Documentation is coming soon!
 
 == Changelog ==
 
-= 2.0.17 =
+= 2.0.18 =
 * Updated widget class
+
+= 2.0.17 =
+* Updated widget class names
 
 = 2.0.16 =
 * Bug fix in YouTube admin code
@@ -168,4 +171,4 @@ Documentation is coming soon!
 
 == Upgrade Notice ==
 
-Updated widget class.
+Updated widget class names.
