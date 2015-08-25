@@ -34,6 +34,9 @@ Documentation is coming soon!
 
 == Changelog ==
 
+= 2.0.18 =
+* Updated widget class names
+
 = 2.0.17 =
 * Updated widget class
 
@@ -168,4 +171,4 @@ Documentation is coming soon!
 
 == Upgrade Notice ==
 
-Updated widget class.
+Updated widget class names.
