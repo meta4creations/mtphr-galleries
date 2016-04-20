@@ -62,7 +62,7 @@ function mtphr_galleries_admin_scripts( $hook ) {
 	wp_register_script( 'mtphr-galleries-sc-gen', MTPHR_GALLERIES_URL.'/assets/js/admin/generator.js', array('jquery'), MTPHR_GALLERIES_VERSION, true );
 	wp_enqueue_script( 'mtphr-galleries-sc-gen' );
 }
-add_action( 'admin_enqueue_scripts', 'mtphr_galleries_admin_scripts' );
+add_action( 'admin_enqueue_scripts', 'mtphr_galleries_admin_scripts', 11 );
 
 
 

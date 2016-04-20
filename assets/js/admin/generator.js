@@ -132,8 +132,8 @@ jQuery( document ).ready( function($) {
 			});
 			term_list = term_list.substr(0, term_list.length-1);
 		
-			if( att_taxonomy != 'mtphr_gallery_category' ) { value += ' categories="'+term_list+'"'; }
-			if( att_taxonomy != 'mtphr_gallery_tag' ) { value += ' tags="'+term_list+'"'; }
+			if( att_taxonomy == 'mtphr_gallery_category' ) { value += ' categories="'+term_list+'"'; }
+			if( att_taxonomy == 'mtphr_gallery_tag' ) { value += ' tags="'+term_list+'"'; }
 			if( att_operator != 'IN' ) { value += ' operator="'+att_operator+'"'; }
 		}
 		
@@ -177,9 +177,11 @@ jQuery( document ).ready( function($) {
 		$('.mtphr-shortcode-gen-rearranger').sortable( {
 			items: '.mtphr-ui-multi-check'
 		});
-
+		
 		if( $id.val() != '' ) {
 			$button.removeAttr('disabled');
+		} else {
+			$button.attr('disabled', 'disabled');
 		}
 	}
 
