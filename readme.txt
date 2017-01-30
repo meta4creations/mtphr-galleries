@@ -34,6 +34,9 @@ Documentation is coming soon!
 
 == Changelog ==
 
+= 2.0.21 =
+* Bug fix from last update
+
 = 2.0.20 =
 * Modified how gallery item dimensions are calculated
 * Modified script loading paths and versions
