@@ -317,38 +317,30 @@
 					// Get the first resource
 					$resource = resources[0];
 
-					// Find the width of the resource
-					var w = $gallery.width();
-					var h = $resource.outerHeight();
+					// Find the dimensions of the resource
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the height of the resourceer
 					$gallery.css( 'height', h+'px' );
 
 					// Set the initial position of the width & make sure it's visible
 					$resource.show();
-
-					// If there are any images, reset height after loading
-					if( $resource.find('img').length > 0 ) {
-
-						$resource.find('img').each( function(index) {
-
-							jQuery(this).load( function() {
-
-								// Find the height of the resource
-								var h = $resource.outerHeight();
-
-								// Set the height of the resourceer
-								$gallery.css( 'height', h+'px' );
-							});
-						});
-					}
 			  }
 
 				// Show the new resource
 				function mtphr_galleries_fade_in( $gallery, $resource, $prev, speed, ease ) {
 			    $resource.fadeIn( speed );
 
-			    var h = $resource.outerHeight();
+			    // Find the dimensions of the resource
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Resize the resourceer
 					$gallery.stop(true,true).animate( {
@@ -374,8 +366,11 @@
 					$resource = resources[0];
 
 					// Find the dimensions of the resource
-					var w = $gallery.width();
-					var h = $resource.outerHeight();
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the height of the resourceer
 					$gallery.css( 'height', h+'px' );
@@ -383,30 +378,17 @@
 					// Set the initial position of the width & make sure it's visible
 					$resource.css( 'left', 0 );
 					$resource.show();
-
-					// If there are any images, reset height after loading
-					if( $resource.find('img').length > 0 ) {
-
-						$resource.find('img').each( function(index) {
-
-							jQuery(this).load( function() {
-
-								// Find the height of the resource
-								var h = $resource.outerHeight();
-
-								// Set the height of the resourceer
-								$gallery.css( 'height', h+'px' );
-							});
-						});
-					}
 			  }
 
 				// Show the new resource
 				function mtphr_galleries_slide_left_in( $gallery, $resource, $prev, speed, ease ) {
 
 					// Find the dimensions of the resource
-					var w = $gallery.width();
-					var h = $resource.outerHeight();
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the initial position of the width & make sure it's visible
 					$resource.css( 'left', w+'px' );
@@ -429,8 +411,11 @@
 			  function mtphr_galleries_slide_left_out( $gallery, $resource, $next, speed, ease ) {
 
 			    // Find the dimensions of the resource
-					var w = $gallery.width();
-					var h = $resource.outerHeight();
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Slide the resource in
 					$resource.stop(true,true).animate( {
@@ -452,8 +437,11 @@
 					$resource = resources[0];
 
 					// Find the dimensions of the resource
-					var w = $gallery.width();
-					var h = $resource.outerHeight();
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the height of the resourceer
 					$gallery.css( 'height', h+'px' );
@@ -483,8 +471,11 @@
 				function mtphr_galleries_slide_right_in( $gallery, $resource, $prev, speed, ease ) {
 
 					// Find the dimensions of the resource
-					var w = $gallery.width();
-					var h = $resource.outerHeight();
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the initial position of the width & make sure it's visible
 					$resource.css( 'left', '-'+w+'px' );
@@ -507,8 +498,11 @@
 			  function mtphr_galleries_slide_right_out( $gallery, $resource, $next, speed, ease ) {
 
 			    // Find the dimensions of the resource
-					var w = $gallery.width();
-					var h = $resource.outerHeight();
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Slide the resource in
 					$resource.stop(true,true).animate( {
@@ -529,8 +523,12 @@
 					// Get the first resource
 					$resource = resources[0];
 
-					// Find the height of the resource
-					var h = $resource.outerHeight();
+					// Find the dimensions of the resource
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the height of the resourceer
 					$gallery.css( 'height', h+'px' );
@@ -538,29 +536,17 @@
 					// Set the initial position of the width & make sure it's visible
 					$resource.css( 'top', 0 );
 					$resource.show();
-
-					// If there are any images, reset height after loading
-					if( $resource.find('img').length > 0 ) {
-
-						$resource.find('img').each( function(index) {
-
-							jQuery(this).load( function() {
-
-								// Find the height of the resource
-								var h = $resource.outerHeight();
-
-								// Set the height of the resourceer
-								$gallery.css( 'height', h+'px' );
-							});
-						});
-					}
 			  }
 
 				// Show the new resource
 				function mtphr_galleries_slide_down_in( $gallery, $resource, $prev, speed, ease ) {
 
-					// Find the height of the resource
-					var h = $resource.outerHeight();
+					// Find the dimensions of the resource
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the initial position of the width & make sure it's visible
 					$resource.css( 'top', '-'+h+'px' );
@@ -582,8 +568,12 @@
 			  // Hide the old resource
 			  function mtphr_galleries_slide_down_out( $gallery, $resource, $next, speed, ease ) {
 
-			    // Find the height of the next resource
-					var h = $next.outerHeight();
+			    // Find the dimensions of the resource
+					var w = $gallery.width(),
+							el_w = $next.data('dimension-width'),
+							el_h = $next.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Slide the resource in
 					$resource.stop(true,true).animate( {
@@ -604,8 +594,12 @@
 					// Get the first resource
 					$resource = resources[0];
 
-					// Find the height of the resource
-					var h = $resource.outerHeight();
+					// Find the dimensions of the resource
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the height of the resourceer
 					$gallery.css( 'height', h+'px' );
@@ -613,29 +607,17 @@
 					// Set the initial position of the width & make sure it's visible
 					$resource.css( 'top', 0 );
 					$resource.show();
-
-					// If there are any images, reset height after loading
-					if( $resource.find('img').length > 0 ) {
-
-						$resource.find('img').each( function(index) {
-
-							jQuery(this).load( function() {
-
-								// Find the height of the resource
-								var h = $resource.outerHeight();
-
-								// Set the height of the resourceer
-								$gallery.css( 'height', h+'px' );
-							});
-						});
-					}
 			  }
 
 				// Show the new resource
 				function mtphr_galleries_slide_up_in( $gallery, $resource, $prev, speed, ease ) {
 
-					// Find the height of the resource
-					var h = $resource.outerHeight();
+					// Find the dimensions of the resource
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Set the initial position of the width & make sure it's visible
 					$resource.css( 'top', $prev.outerHeight()+'px' );
@@ -657,8 +639,12 @@
 			  // Hide the old resource
 			  function mtphr_galleries_slide_up_out( $gallery, $resource, $next, speed, ease ) {
 
-			    // Find the height of the next resource
-					var h = $resource.outerHeight();
+			    // Find the dimensions of the resource
+					var w = $gallery.width(),
+							el_w = $resource.data('dimension-width'),
+							el_h = $resource.data('dimension-height'),
+							scale = el_h/el_w,
+							h = w*scale;
 
 					// Slide the resource in
 					$resource.stop(true,true).animate( {

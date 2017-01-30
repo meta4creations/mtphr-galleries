@@ -278,8 +278,10 @@ function get_mtphr_gallery_resources( $post_id=false, $width=false, $height=fals
 		$gallery = '<div class="mtphr-gallery-resource-container">';
 		foreach( $resources as $i=>$resource ) {
 			$resource = apply_filters( 'mtphr_galleries_resource_data', $resource );
-			$div = '<div id="mtphr-gallery-resource-'.$i.'" class="mtphr-gallery-resource mtphr-gallery-resource-'.$resource['type'].'">';
-				$div .= get_mtphr_gallery_resource( $resource, $width, $height );
+			$resource_data = get_mtphr_gallery_resource( $resource, $width, $height );
+			
+			$div = '<div id="mtphr-gallery-resource-'.$i.'" class="mtphr-gallery-resource mtphr-gallery-resource-'.$resource['type'].'" data-dimension-width="'.$resource_data['width'].'" data-dimension-height="'.$resource_data['height'].'">';
+				$div .= $resource_data['element'];
 			$div .= '</div>';
 			$gallery .=  apply_filters( 'mtphr_gallery_resource', $div, $resource, $width, $height, $post_id );
 		}
@@ -319,46 +321,73 @@ function mtphr_galleries_compress_script( $str ) {
 if( !function_exists('mtphr_galleries_resource') ) {
 function mtphr_galleries_resource( $resource, $width=false, $height=false, $size='mtphr-galleries-image' ) {
 	
+	$data = array();
+	
 	switch( $resource['type'] ) {
 		case 'image':
 			if( isset($resource['external']) ) {
 				return '<img src="'.$resource['id'].'" />';
 			} else {
-				$post = get_post( $resource['id'] );
-				return wp_get_attachment_image( $post->ID, $size );	
+				//$post = get_post( $resource['id'] );
+				$img = wp_get_attachment_image_src( $resource['id'], $size );
+				//return wp_get_attachment_image( $post->ID, $size );
+				return array(
+					'element' => '<img width="'.$img[1].'" height="'.$img[2].'" src="'.$img[0].'" class="attachment-'.$size.' size-'.$size.'" alt="">',
+					'width' => $img[1],
+					'height' => $img[2]
+				);
 			}		
 			break;
 
 		case 'video':
 			$post = get_post( $resource['id'] );
+			$meta = wp_get_attachment_metadata( $resource['id'] );
 			$poster = isset($resource['poster']) ? wp_get_attachment_image_src($resource['poster'], $size) : false;
 			$poster = $poster ? $poster[0] : '';
 			$video = '<video class="mtphr-galleries-video mtphr-galleries-mep" src="'.$post->guid.'" width="100%" height="100%" style="width:100%;height:100%;" poster="'.$poster.'">';
 				$video .= '<source src="'.$post->guid.'" type="'.$post->post_mime_type.'">';
 			$video .= '</video>';
-			return $video;
+			return array(
+				'element' => $video,
+				'width' => isset($meta['width']) ? $meta['width'] : 640,
+				'height' => isset($meta['height']) ? $meta['height'] : 360
+			);
 
 		case 'audio':
 			$post = get_post( $resource['id'] );
 			$audio = '';
 			if( isset($resource['poster']) && $resource['poster'] != '' ) {
-				$audio .= wp_get_attachment_image( $resource['poster'], $size );	
+				$img = wp_get_attachment_image_src( $resource['poster'], $size );
+				$audio .= '<img width="'.$img[1].'" height="'.$img[2].'" src="'.$img[0].'" class="attachment-'.$size.' size-'.$size.'" alt="">';
+				//$audio .= wp_get_attachment_image( $resource['poster'], $size );	
 			}
 			$audio .= '<audio class="mtphr-galleries-audio mtphr-galleries-mep" src="'.$post->guid.'" width="100%" height="100%" style="width:100%;height:100%;">';
 				$audio .= '<source src="'.$post->guid.'" type="'.$post->post_mime_type.'">';
 			$audio .= '</audio>';
-			return $audio;
+			return array(
+				'element' => $audio,
+				'width' => $img[1],
+				'height' => $img[2]
+			);
 
 		case 'vimeo':
 			$width = $width ? $width : 640;
 			$height = $height ? $height : intval( $width/16*9 );
-			return '<iframe class="mtphr-galleries-vimeo mtphr-galleries-iframe" src="http://player.vimeo.com/video/'.$resource['id'].'?title=0&amp;byline=0&amp;portrait=0" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+			return array(
+				'element' => '<iframe class="mtphr-galleries-vimeo mtphr-galleries-iframe" src="http://player.vimeo.com/video/'.$resource['id'].'?title=0&amp;byline=0&amp;portrait=0" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>',
+				'width' => $width,
+				'height' => $height
+			);
 			break;
 
 		case 'youtube':
 			$width = $width ? $width : 640;
 			$height = $height ? $height : intval( $width/16*9 );
-			return '<iframe class="mtphr-galleries-youtube mtphr-galleries-iframe" width="'.$width.'" height="'.$height.'" src="http://www.youtube.com/embed/'.$resource['id'].'?rel=0&showinfo=0?wmode=opaque" frameborder="0" allowfullscreen></iframe>';
+			return array(
+				'element' => '<iframe class="mtphr-galleries-youtube mtphr-galleries-iframe" width="'.$width.'" height="'.$height.'" src="http://www.youtube.com/embed/'.$resource['id'].'?rel=0&showinfo=0?wmode=opaque" frameborder="0" allowfullscreen></iframe>',
+				'width' => $width,
+				'height' => $height
+			);
 			break;
 	}
 

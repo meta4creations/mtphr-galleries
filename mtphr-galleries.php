@@ -2,7 +2,7 @@
 /*
 Plugin Name: Metaphor Galleries
 Description: Adds a custom post type to easily create media galleries to add to your site. Add a gallery archive or single gallery to any page with shortcodes.
-Version: 2.0.19
+Version: 2.0.20
 Author: Metaphor Creations
 Author URI: http://www.metaphorcreations.com
 License: GPL2
@@ -28,11 +28,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 
 /**Define Widget Constants */
-define ( 'MTPHR_GALLERIES_VERSION', '2.0.19' );
 define ( 'MTPHR_GALLERIES_DIR', plugin_dir_path(__FILE__) );
-define ( 'MTPHR_GALLERIES_URL', plugins_url().'/mtphr-galleries' );
-
-
 
 // Load the general functions
 require_once( MTPHR_GALLERIES_DIR.'includes/wpml.php' );
