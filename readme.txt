@@ -34,6 +34,9 @@ Documentation is coming soon!
 
 == Changelog ==
 
+= 2.0.22 =
+* Modified Vimeo & YouTube paths to use protocal relative URLs
+
 = 2.0.21 =
 * Bug fix from last update
 
@@ -181,4 +184,4 @@ Documentation is coming soon!
 
 == Upgrade Notice ==
 
-Modified gallery item dimensions and script loading
+Modified Vimeo & YouTube paths to use protocal relative URLs

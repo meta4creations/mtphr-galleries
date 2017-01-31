@@ -315,7 +315,7 @@ function mtphr_galleries_compress_script( $str ) {
 
 
 /* --------------------------------------------------------- */
-/* !Return the gallery resource 1.0.5 */
+/* !Return the gallery resource 2.0.22 */
 /* --------------------------------------------------------- */
 
 if( !function_exists('mtphr_galleries_resource') ) {
@@ -374,7 +374,7 @@ function mtphr_galleries_resource( $resource, $width=false, $height=false, $size
 			$width = $width ? $width : 640;
 			$height = $height ? $height : intval( $width/16*9 );
 			return array(
-				'element' => '<iframe class="mtphr-galleries-vimeo mtphr-galleries-iframe" src="http://player.vimeo.com/video/'.$resource['id'].'?title=0&amp;byline=0&amp;portrait=0" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>',
+				'element' => '<iframe class="mtphr-galleries-vimeo mtphr-galleries-iframe" src="//player.vimeo.com/video/'.$resource['id'].'?title=0&amp;byline=0&amp;portrait=0" width="'.$width.'" height="'.$height.'" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>',
 				'width' => $width,
 				'height' => $height
 			);
@@ -384,7 +384,7 @@ function mtphr_galleries_resource( $resource, $width=false, $height=false, $size
 			$width = $width ? $width : 640;
 			$height = $height ? $height : intval( $width/16*9 );
 			return array(
-				'element' => '<iframe class="mtphr-galleries-youtube mtphr-galleries-iframe" width="'.$width.'" height="'.$height.'" src="http://www.youtube.com/embed/'.$resource['id'].'?rel=0&showinfo=0?wmode=opaque" frameborder="0" allowfullscreen></iframe>',
+				'element' => '<iframe class="mtphr-galleries-youtube mtphr-galleries-iframe" width="'.$width.'" height="'.$height.'" src="//www.youtube.com/embed/'.$resource['id'].'?rel=0&showinfo=0?wmode=opaque" frameborder="0" allowfullscreen></iframe>',
 				'width' => $width,
 				'height' => $height
 			);
