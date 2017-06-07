@@ -90,6 +90,10 @@ function mtphr_gallery_external_thumb_ajax() {
 			if( $response['response']['code'] == 200 ) {
 				parse_str($response['body'], $ytarr);
 				$url = 'https://img.youtube.com/vi/'.$value.'/maxresdefault.jpg';
+				$max_res_check = wp_remote_get($url);
+				if( $max_res_check['response']['code'] == 404 ) {
+					$url = 'https://img.youtube.com/vi/'.$value.'/0.jpg';
+				}
 				$title = $ytarr['title'];
 				$file_path = $gallery_upload_dir.'/youtube-'.$value.'.jpg';
 				$file_url = $gallery_upload_url.'/youtube-'.$value.'.jpg';
@@ -179,8 +183,13 @@ function mtphr_gallery_create_external_thumb_ajax() {
 		case 'youtube':
 			$response = wp_remote_get('http://youtube.com/get_video_info?video_id='.$value);
 			if( $response['response']['code'] == 200 ) {
-				parse_str($response['body'], $ytarr);			
+				parse_str($response['body'], $ytarr);	
+		
 				$url = 'https://img.youtube.com/vi/'.$value.'/maxresdefault.jpg';
+				$max_res_check = wp_remote_get($url);
+				if( $max_res_check['response']['code'] == 404 ) {
+					$url = 'https://img.youtube.com/vi/'.$value.'/0.jpg';
+				}
 				$title = $ytarr['title'];
 
 				$file_path = $gallery_upload_dir.'/youtube-'.$value.'.jpg';

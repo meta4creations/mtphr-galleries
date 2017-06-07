@@ -34,6 +34,9 @@ Documentation is coming soon!
 
 == Changelog ==
 
+= 2.0.24 =
+* Fixed broken YouTube thumbnail urls
+
 = 2.0.23 =
 * Fixed broken YouTube thumbnail urls
 * CSS Updates

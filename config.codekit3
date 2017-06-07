@@ -14,9 +14,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/css\/style-admin-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/assets\/css\/style.css": {
@@ -24,9 +24,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/css\/style-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/assets\/fontastic\/fonts\/metaphor-galleries.eot": {
