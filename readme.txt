@@ -3,7 +3,7 @@ Contributors: metaphorcreations
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TCAJHP4AJ392N
 Tags: custom post type, galleries, gallery, photos, vimeo, youtube, slider
 Requires at least: 3.2
-Tested up to: 4.7.2
+Tested up to: 4.8
 Stable tag: /trunk/
 License: GPL2
 
@@ -33,6 +33,10 @@ Documentation is coming soon!
 1. Coming soon.
 
 == Changelog ==
+
+= 2.0.23 =
+* Fixed broken YouTube thumbnail urls
+* CSS Updates
 
 = 2.0.22 =
 * Modified Vimeo & YouTube paths to use protocal relative URLs
@@ -184,4 +188,4 @@ Documentation is coming soon!
 
 == Upgrade Notice ==
 
-Modified Vimeo & YouTube paths to use protocal relative URLs
+Fixed broken YouTube thumbnail urls

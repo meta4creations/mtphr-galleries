@@ -27,6 +27,7 @@ function mtphr_galleries_admin_scripts( $hook ) {
 		wp_enqueue_script( 'jquery-ui-slider' );
 		wp_enqueue_script( 'jquery-ui-sortable' );
 		wp_enqueue_script( 'jquery-ui-tabs' );
+		wp_enqueue_script( 'jquery-ui-helper' );
 
 
 		// Register icon font
@@ -34,7 +35,7 @@ function mtphr_galleries_admin_scripts( $hook ) {
 	  wp_enqueue_style( 'mtphr-galleries-font' );
 
 		// Load the admin scripts
-		wp_register_script( 'mtphr-galleries', plugins_url().'/mtphr-galleries/assets/js/admin/script.js', false, filemtime(MTPHR_GALLERIES_DIR.'/assets/js/admin/script.js'), true );
+		wp_register_script( 'mtphr-galleries', plugins_url().'/mtphr-galleries/assets/js/admin/script.min.js', false, filemtime(MTPHR_GALLERIES_DIR.'/assets/js/admin/script.min.js'), true );
 		wp_enqueue_script( 'mtphr-galleries' );
 		wp_localize_script( 'mtphr-galleries', 'mtphr_galleries_vars', array(
 				'security' => wp_create_nonce( 'mtphr_galleries' ),

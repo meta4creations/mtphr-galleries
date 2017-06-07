@@ -1,0 +1,750 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Metaphor Galleries\n"
+"POT-Creation-Date: 2017-06-02 11:38-0500\n"
+"PO-Revision-Date: 2017-06-02 11:37-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: mtphr-galleries.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/admin/edit-columns.php:13
+msgid "<i class=\"mtphr-galleries-icon-like\"></i>"
+msgstr ""
+
+#: includes/admin/fields.php:40 includes/admin/fields.php:71
+#: includes/admin/fields.php:98 includes/admin/fields.php:125
+#: includes/admin/fields.php:161 includes/admin/fields.php:186
+#: includes/admin/fields.php:215 includes/admin/fields.php:251
+#: includes/admin/fields.php:290 includes/admin/fields.php:328
+#: includes/admin/fields.php:359
+msgid "Missing required data"
+msgstr ""
+
+#: includes/admin/fields.php:239
+msgid "Fade"
+msgstr ""
+
+#: includes/admin/fields.php:240
+msgid "Slide left"
+msgstr ""
+
+#: includes/admin/fields.php:241
+msgid "Slide right"
+msgstr ""
+
+#: includes/admin/fields.php:242
+msgid "Slide up"
+msgstr ""
+
+#: includes/admin/fields.php:243
+msgid "Slide down"
+msgstr ""
+
+#: includes/admin/fields.php:245
+msgid "Dynamic slide direction"
+msgstr ""
+
+#: includes/admin/fields.php:279 includes/admin/fields.php:353
+#: includes/admin/meta-boxes.php:361 includes/settings.php:172
+msgid "Enable"
+msgstr ""
+
+#: includes/admin/fields.php:281
+msgid "Seconds delay"
+msgstr ""
+
+#: includes/admin/fields.php:284
+msgid "Pause on mouse over"
+msgstr ""
+
+#: includes/admin/fields.php:315
+msgid "Tenths of a second"
+msgstr ""
+
+#: includes/admin/fields.php:354
+msgid "Autohide navigation"
+msgstr ""
+
+#: includes/admin/generators/archive.php:14 includes/admin/shortcode-gen.php:13
+msgid "Gallery Archive"
+msgstr ""
+
+#: includes/admin/generators/archive.php:20
+msgid "Posts Per Page"
+msgstr ""
+
+#: includes/admin/generators/archive.php:21
+msgid "Use -1 to display all"
+msgstr ""
+
+#: includes/admin/generators/archive.php:27
+msgid "Columns"
+msgstr ""
+
+#: includes/admin/generators/archive.php:41
+msgid "Order By"
+msgstr ""
+
+#: includes/admin/generators/archive.php:43
+msgid "ID"
+msgstr ""
+
+#: includes/admin/generators/archive.php:44
+msgid "Author"
+msgstr ""
+
+#: includes/admin/generators/archive.php:45
+#: includes/admin/generators/archive.php:131
+msgid "Title"
+msgstr ""
+
+#: includes/admin/generators/archive.php:46
+msgid "Name"
+msgstr ""
+
+#: includes/admin/generators/archive.php:47
+msgid "Date"
+msgstr ""
+
+#: includes/admin/generators/archive.php:48
+msgid "Modified"
+msgstr ""
+
+#: includes/admin/generators/archive.php:49 includes/taxonomies.php:30
+#: includes/taxonomies.php:73
+msgid "Parent"
+msgstr ""
+
+#: includes/admin/generators/archive.php:50
+msgid "Random"
+msgstr ""
+
+#: includes/admin/generators/archive.php:51
+msgid "Comment Count"
+msgstr ""
+
+#: includes/admin/generators/archive.php:52
+msgid "Menu Order"
+msgstr ""
+
+#: includes/admin/generators/archive.php:59
+msgid "Order"
+msgstr ""
+
+#: includes/admin/generators/archive.php:73
+msgid "Excerpt Length"
+msgstr ""
+
+#: includes/admin/generators/archive.php:80
+msgid "Excerpt More"
+msgstr ""
+
+#: includes/admin/generators/archive.php:87
+msgid "Link \"Excerpt More\" to post"
+msgstr ""
+
+#: includes/admin/generators/archive.php:88
+msgid "Link to post"
+msgstr ""
+
+#: includes/admin/generators/archive.php:98
+msgid "Taxonomy"
+msgstr ""
+
+#: includes/admin/generators/archive.php:108
+msgid "Terms"
+msgstr ""
+
+#: includes/admin/generators/archive.php:115
+msgid "Operator"
+msgstr ""
+
+#: includes/admin/generators/archive.php:117
+msgid "IN"
+msgstr ""
+
+#: includes/admin/generators/archive.php:118
+msgid "NOT IN"
+msgstr ""
+
+#: includes/admin/generators/archive.php:119
+msgid "AND"
+msgstr ""
+
+#: includes/admin/generators/archive.php:127
+msgid "Assets"
+msgstr ""
+
+#: includes/admin/generators/archive.php:127
+#: includes/admin/generators/gallery.php:47
+msgid "Drag to re-arrange"
+msgstr ""
+
+#: includes/admin/generators/archive.php:129
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/admin/generators/archive.php:130
+msgid "Like Button"
+msgstr ""
+
+#: includes/admin/generators/archive.php:132
+msgid "Excerpt"
+msgstr ""
+
+#: includes/admin/generators/gallery.php:21
+#: includes/admin/generators/gallery.php:27
+#: includes/admin/generators/gallery.php:49 includes/admin/shortcode-gen.php:17
+#: includes/settings.php:21
+msgid "Gallery"
+msgstr ""
+
+#: includes/admin/generators/gallery.php:27
+msgid "Required"
+msgstr ""
+
+#: includes/admin/generators/gallery.php:29
+msgid "Select a Gallery"
+msgstr ""
+
+#: includes/admin/generators/gallery.php:39
+msgid "Class"
+msgstr ""
+
+#: includes/admin/generators/gallery.php:39
+msgid "Optional"
+msgstr ""
+
+#: includes/admin/generators/gallery.php:40
+msgid "Add an optional class name"
+msgstr ""
+
+#: includes/admin/generators/gallery.php:47
+msgid "Layout"
+msgstr ""
+
+#: includes/admin/generators/gallery.php:50
+msgid "Navigation"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:10 includes/settings.php:334
+#, php-format
+msgid "%s Settings"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:30
+msgid "Resources"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:31
+msgid "Rotator Settings"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:32
+#, php-format
+msgid "%s Data"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:107
+msgid "Client"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:108
+#, php-format
+msgid "Add a client to the %s"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:121
+msgid "External link"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:122
+#, php-format
+msgid "Add an external link to associate with the %s"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:177
+msgid "Add Images"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:178
+msgid "Add Videos"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:179
+msgid "Add Audio"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:180
+msgid "Add YouTube"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:181
+msgid "Add Vimeo"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:213
+msgid "Submit"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:279 includes/settings.php:103
+msgid "Rotation type"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:280 includes/settings.php:103
+msgid "Set the type of rotation for the rotator"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:297 includes/settings.php:118
+msgid "Auto rotate"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:298 includes/settings.php:118
+msgid "Set the delay between rotations"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:317 includes/settings.php:135
+msgid "Rotate speed"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:318 includes/settings.php:135
+msgid "Set the speed & easing of the rotation"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:335 includes/settings.php:150
+msgid "Directional navigation"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:336 includes/settings.php:150
+msgid "Set the directional navigation options"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:353 includes/settings.php:165
+msgid "Control navigation"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:354 includes/settings.php:165
+msgid "Set the control navigation options"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: includes/admin/shortcode-gen.php:23
+msgid "Metaphor Galleries"
+msgstr ""
+
+#: includes/display.php:71 includes/filters.php:80
+msgid "Previous"
+msgstr ""
+
+#: includes/display.php:72 includes/filters.php:81
+msgid "Next"
+msgstr ""
+
+#: includes/display.php:254
+msgid "Image"
+msgstr ""
+
+#: includes/display.php:296
+msgid "Video"
+msgstr ""
+
+#: includes/display.php:310 includes/display.php:351 includes/scripts.php:45
+msgid "Add Poster Image"
+msgstr ""
+
+#: includes/display.php:313 includes/display.php:354 includes/scripts.php:46
+msgid "Remove Poster Image"
+msgstr ""
+
+#: includes/display.php:337
+msgid "Audio"
+msgstr ""
+
+#: includes/display.php:385
+msgid "YouTube"
+msgstr ""
+
+#: includes/display.php:401 includes/display.php:451
+msgid "Refresh Poster Image"
+msgstr ""
+
+#: includes/display.php:404 includes/display.php:454
+msgid "Create Poster Image"
+msgstr ""
+
+#: includes/display.php:435
+msgid "Vimeo"
+msgstr ""
+
+#: includes/post-types.php:29 includes/post-types.php:30
+#: includes/post-types.php:40
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: includes/post-types.php:31
+msgid "Add New"
+msgstr ""
+
+#: includes/post-types.php:32
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: includes/post-types.php:33
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: includes/post-types.php:34
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: includes/post-types.php:35
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: includes/post-types.php:36
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: includes/post-types.php:37
+#, php-format
+msgid "No %s Found"
+msgstr ""
+
+#: includes/post-types.php:38
+#, php-format
+msgid "No %s Found in Trash"
+msgstr ""
+
+#: includes/scripts.php:41
+msgid "Upload or select images"
+msgstr ""
+
+#: includes/scripts.php:42
+msgid "Insert Image(s)"
+msgstr ""
+
+#: includes/scripts.php:43
+msgid "Upload or select a poster image"
+msgstr ""
+
+#: includes/scripts.php:44
+msgid "Insert Poster Image"
+msgstr ""
+
+#: includes/scripts.php:47
+msgid "Upload or select videos"
+msgstr ""
+
+#: includes/scripts.php:48
+msgid "Insert Video(s)"
+msgstr ""
+
+#: includes/scripts.php:49
+msgid "Upload or select Audio Files"
+msgstr ""
+
+#: includes/scripts.php:50
+msgid "Insert Audio File(s)"
+msgstr ""
+
+#: includes/scripts.php:51
+msgid "YouTube Video URL or ID"
+msgstr ""
+
+#: includes/scripts.php:52
+msgid "Vimeo Video URL or ID"
+msgstr ""
+
+#: includes/settings.php:22
+msgid "Galleries"
+msgstr ""
+
+#: includes/settings.php:56
+msgid "General settings"
+msgstr ""
+
+#: includes/settings.php:56 includes/settings.php:58
+msgid "Save Changes"
+msgstr ""
+
+#: includes/settings.php:58
+msgid "Rotator settings"
+msgstr ""
+
+#: includes/settings.php:66
+msgid "Slug"
+msgstr ""
+
+#: includes/settings.php:66
+msgid "Set the slug for the gallery post type and category"
+msgstr ""
+
+#: includes/settings.php:70
+msgid "Singular label"
+msgstr ""
+
+#: includes/settings.php:70
+msgid "Set the singular label for the gallery post type and category"
+msgstr ""
+
+#: includes/settings.php:74
+msgid "Plural label"
+msgstr ""
+
+#: includes/settings.php:74
+msgid "Set the plural label for the gallery post type and category"
+msgstr ""
+
+#: includes/settings.php:82
+msgid "Has archive"
+msgstr ""
+
+#: includes/settings.php:82
+msgid "Set whether or not the post type has an archive page"
+msgstr ""
+
+#: includes/settings.php:89
+msgid "Global rotator settings"
+msgstr ""
+
+#: includes/settings.php:89
+msgid "Disable individual rotator settings and use global settings"
+msgstr ""
+
+#: includes/settings.php:96
+msgid "Use global settings for all sliders"
+msgstr ""
+
+#: includes/settings.php:201
+msgid "You must update permalinks after changing the slug."
+msgstr ""
+
+#: includes/settings.php:201
+msgid "You must not have a page slug with the same name as this slug."
+msgstr ""
+
+#: includes/settings.php:244
+msgid "Not Public"
+msgstr ""
+
+#: includes/settings.php:245
+msgid "Public"
+msgstr ""
+
+#: includes/settings.php:261
+msgid "No Archive Page"
+msgstr ""
+
+#: includes/settings.php:262
+msgid "Has Archive Page"
+msgstr ""
+
+#: includes/settings.php:313 includes/settings.php:314
+msgid "Settings"
+msgstr ""
+
+#: includes/shortcodes.php:125
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: includes/shortcodes.php:175
+msgid "Newer"
+msgstr ""
+
+#: includes/shortcodes.php:178
+msgid "Older"
+msgstr ""
+
+#: includes/taxonomies.php:26
+#, php-format
+msgid "%s Categories"
+msgstr ""
+
+#: includes/taxonomies.php:27
+msgid "Category"
+msgstr ""
+
+#: includes/taxonomies.php:28
+msgid "Search Categories"
+msgstr ""
+
+#: includes/taxonomies.php:29
+msgid "All Categories"
+msgstr ""
+
+#: includes/taxonomies.php:31 includes/taxonomies.php:74
+msgid "Parent:"
+msgstr ""
+
+#: includes/taxonomies.php:32
+msgid "Edit Category"
+msgstr ""
+
+#: includes/taxonomies.php:33
+msgid "Update Category"
+msgstr ""
+
+#: includes/taxonomies.php:34
+msgid "Add New Category"
+msgstr ""
+
+#: includes/taxonomies.php:35
+msgid "New Category"
+msgstr ""
+
+#: includes/taxonomies.php:36
+msgid "Categories"
+msgstr ""
+
+#: includes/taxonomies.php:69
+#, php-format
+msgid "%s Tags"
+msgstr ""
+
+#: includes/taxonomies.php:70
+msgid "Tag"
+msgstr ""
+
+#: includes/taxonomies.php:71
+msgid "Search Tags"
+msgstr ""
+
+#: includes/taxonomies.php:72
+msgid "All Tags"
+msgstr ""
+
+#: includes/taxonomies.php:75
+msgid "Edit Tag"
+msgstr ""
+
+#: includes/taxonomies.php:76
+msgid "Update Tag"
+msgstr ""
+
+#: includes/taxonomies.php:77
+msgid "Add New Tag"
+msgstr ""
+
+#: includes/taxonomies.php:78
+msgid "New Tag"
+msgstr ""
+
+#: includes/taxonomies.php:79
+msgid "Tags"
+msgstr ""
+
+#: includes/widget-categories.php:13
+msgid "Metaphor Gallery Categories"
+msgstr ""
+
+#: includes/widget-categories.php:16
+msgid "Display a list of gallery categories"
+msgstr ""
+
+#: includes/widget-categories.php:60
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: includes/widget-categories.php:108 includes/widget-data.php:127
+msgid "Title:"
+msgstr ""
+
+#: includes/widget-categories.php:115
+msgid "Show post counts"
+msgstr ""
+
+#: includes/widget-categories.php:119
+msgid "Show hierarchy"
+msgstr ""
+
+#: includes/widget-categories.php:125
+msgid "All Galleries Page:"
+msgstr ""
+
+#: includes/widget-data.php:13
+msgid "Metaphor Gallery Data"
+msgstr ""
+
+#: includes/widget-data.php:16
+msgid "Display individual gallery data"
+msgstr ""
+
+#: includes/widget-data.php:34 includes/widget-data.php:117
+msgid "Launch"
+msgstr ""
+
+#: includes/widget-data.php:48
+msgid "Date:"
+msgstr ""
+
+#: includes/widget-data.php:56
+msgid "Client:"
+msgstr ""
+
+#: includes/widget-data.php:65
+msgid "Categories:"
+msgstr ""
+
+#: includes/widget-data.php:74
+msgid "Tags:"
+msgstr ""
+
+#: includes/widget-data.php:133
+msgid "Display date"
+msgstr ""
+
+#: includes/widget-data.php:136
+msgid "Display client"
+msgstr ""
+
+#: includes/widget-data.php:139
+msgid "Display categories"
+msgstr ""
+
+#: includes/widget-data.php:142
+msgid "Display tags"
+msgstr ""
+
+#: includes/widget-data.php:147
+msgid "Button label:"
+msgstr ""
+
+#: includes/widget-data.php:153
+msgid "Button target:"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds a custom post type to easily create media galleries to add to your "
+"site. Add a gallery archive or single gallery to any page with shortcodes."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Metaphor Creations"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.metaphorcreations.com"
+msgstr ""

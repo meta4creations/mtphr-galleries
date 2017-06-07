@@ -89,7 +89,7 @@ function mtphr_gallery_external_thumb_ajax() {
 			$response = wp_remote_get('http://youtube.com/get_video_info?video_id='.$value);
 			if( $response['response']['code'] == 200 ) {
 				parse_str($response['body'], $ytarr);
-				$url = $ytarr['iurlhq'];
+				$url = 'https://img.youtube.com/vi/'.$value.'/maxresdefault.jpg';
 				$title = $ytarr['title'];
 				$file_path = $gallery_upload_dir.'/youtube-'.$value.'.jpg';
 				$file_url = $gallery_upload_url.'/youtube-'.$value.'.jpg';
@@ -180,11 +180,12 @@ function mtphr_gallery_create_external_thumb_ajax() {
 			$response = wp_remote_get('http://youtube.com/get_video_info?video_id='.$value);
 			if( $response['response']['code'] == 200 ) {
 				parse_str($response['body'], $ytarr);			
-				$url = $ytarr['iurlhq'];
+				$url = 'https://img.youtube.com/vi/'.$value.'/maxresdefault.jpg';
 				$title = $ytarr['title'];
+
 				$file_path = $gallery_upload_dir.'/youtube-'.$value.'.jpg';
 				$file_url = $gallery_upload_url.'/youtube-'.$value.'.jpg';	
-				
+
 				if( mtphr_galleries_copy_poster($url, $file_path) ) {
 					if( $id = mtphr_galleries_create_external_thumb_attachment( $file_path, $file_url, $title, $poster, $parent ) ) {
 						sleep( 2 );
