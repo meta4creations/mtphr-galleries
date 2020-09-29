@@ -3,7 +3,7 @@ Contributors: metaphorcreations
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TCAJHP4AJ392N
 Tags: custom post type, galleries, gallery, photos, vimeo, youtube, slider
 Requires at least: 3.2
-Tested up to: 4.8
+Tested up to: 5.5.1
 Stable tag: /trunk/
 License: GPL2
 
@@ -33,6 +33,9 @@ Documentation is coming soon!
 1. Coming soon.
 
 == Changelog ==
+
+= 2.1 =
+* Updated javascript for WP 5.5
 
 = 2.0.24 =
 * Fixed broken YouTube thumbnail urls
@@ -191,4 +194,4 @@ Documentation is coming soon!
 
 == Upgrade Notice ==
 
-Fixed broken YouTube thumbnail urls
+Updated javascript for WP 5.5

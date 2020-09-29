@@ -53,7 +53,7 @@ jQuery( document ).ready( function($) {
 	});
 
 	// Delete thumbnails
-	$('.mtphr-gallery-thumbnail-delete').live( 'click', function(e) {
+	$('body').on( 'click', '.mtphr-gallery-thumbnail-delete', function(e) {
 		e.preventDefault();
 		
 		var $container = $(this).parents('.mtphr-galleries-thumbnails'),
@@ -320,7 +320,7 @@ jQuery( document ).ready( function($) {
 	/* !Update the external poster image */
 	/* --------------------------------------------------------- */
 	
-	$('.mtphr-galleries-update-poster-button').live( 'click', function(e) {
+	$('body').on( 'click', '.mtphr-galleries-update-poster-button', function(e) {
 	  e.preventDefault();
 
 	  // Save the container
@@ -417,7 +417,7 @@ jQuery( document ).ready( function($) {
 	/* !Add poster image - 2.0.4 */
 	/* --------------------------------------------------------- */
 	
-	$('.mtphr-galleries-poster-button.add-poster').live( 'click', function(e) {
+	$('body').on( 'click', '.mtphr-galleries-poster-button.add-poster', function(e) {
 	  e.preventDefault();
 
 	  // Save the container
@@ -482,7 +482,7 @@ jQuery( document ).ready( function($) {
 	/* !Remove poster image */
 	/* --------------------------------------------------------- */
 	
-	$('.mtphr-galleries-poster-button.remove-poster').live( 'click', function(e) {
+	$('body').on( 'click', '.mtphr-galleries-poster-button.remove-poster', function(e) {
 	  e.preventDefault();
 
 	  // Save the container
